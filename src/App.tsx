@@ -1,8 +1,11 @@
+import Menu from './components/Menu';
+import { Container } from './styles';
+
 function App() {
      return (
-          <>
-               <h1>Hello</h1>
-          </>
+          <Container>
+               <Menu ItemsMenu={['Home', 'About', 'Features']} />
+          </Container>
      );
 }
 
