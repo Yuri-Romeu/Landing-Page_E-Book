@@ -1,30 +1,36 @@
 import { FaStar } from 'react-icons/fa';
 import { FaRegStar } from 'react-icons/fa';
-import pessoa1 from '../../assets/images/pessoa1.jpg';
 import { Assessment, Container, Header } from './styles';
-const Testimony = () => {
+
+type Props = {
+     name: string;
+     text: string;
+     image: string;
+     job: string;
+     stars: number;
+};
+
+const Testimony = ({ name, text, image, job, stars }: Props) => {
      return (
           <Container>
                <Header>
-                    <img src={pessoa1} alt="Foto da Testemunha" />
+                    <img src={image} alt="Foto da Testemunha" />
                     <div>
-                         <h1>João Silva</h1>
-                         <p>Estudante</p>
+                         <h1>{name}</h1>
+                         <p>{job}</p>
                     </div>
                </Header>
 
                <Assessment>
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                    <FaRegStar />
+                    {Array.from({ length: stars }, (_, index) => (
+                         <FaStar key={index} />
+                    ))}
+                    {Array.from({ length: 5 - stars }, (_, index) => (
+                         <FaRegStar key={index} />
+                    ))}
                </Assessment>
 
-               <p>
-                    "Eu gostei muito do design deste e-book, design moderno e atualizado, recomendo
-                    demais."
-               </p>
+               <p>{text}</p>
           </Container>
      );
 };

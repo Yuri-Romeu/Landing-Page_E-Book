@@ -8,12 +8,13 @@ export const Container = styled.div`
           width: 50px;
           height: 50px;
           border-radius: 50%;
+          object-fit: cover;
      }
 
      > p {
           font-size: 16px;
           font-weight: 300;
-          width: 70%;
+          width: 100%;
      }
 `;
 
