@@ -30,9 +30,20 @@ export const Input = styled.input`
      border-radius: 5px;
      font-size: 16px;
      display: block;
+     transition: border 0.1s ease-in-out;
 
      &::placeholder {
           color: #e0e0e0ff;
+     }
+
+     &:focus {
+          outline: none;
+          border-color: #348eff;
+     }
+
+     &:active {
+          outline: none;
+          border-color: #348eff;
      }
 `;
 
