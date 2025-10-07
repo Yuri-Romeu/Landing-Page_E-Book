@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { colors } from '../../styles';
 
 export const Container = styled.div`
-     margin: 20px 0;
+     margin: 40px 0;
      transition: transform 0.3s ease-in-out;
 
      p {

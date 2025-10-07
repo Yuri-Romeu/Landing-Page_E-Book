@@ -28,6 +28,7 @@ export const Container = styled.div<Props>`
      padding: 0 20px;
      display: ${props => (props.flex ? 'flex' : 'block')};
      gap: ${props => (props.flex ? '40px' : '0')};
+     margin-bottom: ${props => (props.flex ? '60px' : '0')};
 `;
 
 export const Title = styled.h1`
