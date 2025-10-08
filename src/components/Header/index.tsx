@@ -1,16 +1,17 @@
 import { Button, Container, Input, Paragraph, Title, Image } from './styles';
 
 type Props = {
+     id: string;
      image: string;
      title: string;
      description: string;
 };
 
-const Header = ({ image, title, description }: Props) => {
+const Header = ({ image, id, title, description }: Props) => {
      return (
           <Container>
                <div>
-                    <Title>{title}</Title>
+                    <Title id={id}>{title}</Title>
 
                     <Paragraph>{description}</Paragraph>
 

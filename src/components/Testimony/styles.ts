@@ -3,6 +3,9 @@ import styled from 'styled-components';
 export const Container = styled.div`
      margin-top: 40px;
      max-width: 400px;
+     background-color: #fff;
+     padding: 5px;
+     border-radius: 5px;
 
      img {
           width: 50px;

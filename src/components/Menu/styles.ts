@@ -30,6 +30,11 @@ export const NavItem = styled.li`
      cursor: pointer;
      transition: color 0.2s ease-in-out;
 
+     a {
+          text-decoration: none;
+          color: #000;
+     }
+
      &:hover {
           color: ${colors.primary};
      }

@@ -14,6 +14,7 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        scroll-behavior: smooth;
     }
 
     body {
@@ -27,6 +28,7 @@ export const Container = styled.div<Props>`
      margin: 0 auto;
      padding: 0 20px;
      display: ${props => (props.flex ? 'flex' : 'block')};
+     justify-content: center;
      gap: ${props => (props.flex ? '40px' : '0')};
      margin-bottom: ${props => (props.flex ? '60px' : '0')};
 `;

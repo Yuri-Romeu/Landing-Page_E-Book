@@ -12,7 +12,9 @@ const Menu = ({ ItemsMenu }: Props) => {
                <div>
                     <NavItems>
                          {ItemsMenu.map(item => (
-                              <NavItem key={item}>{item}</NavItem>
+                              <NavItem key={item}>
+                                   <a href={'#' + item}>{item}</a>
+                              </NavItem>
                          ))}
                     </NavItems>
 
